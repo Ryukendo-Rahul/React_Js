@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+
+function MyComponent({name , giveClass, income=0} ){
+  return ( 
+<>
+  <div className={giveClass} >
+    {name}: $ {income}</div>
+  <hr/>
+  </>
+ );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    Hello <MyComponent name={"Abhi"} income={"234"} giveClass="comp1" />  
+    <MyComponent name={"Satya"} giveClass="comp2"/> 
+     <MyComponent name={"Simmi"} income={"5634"} giveClass="comp3"/> 
+
+   </div>
   );
 }
 

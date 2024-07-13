@@ -1,10 +1,17 @@
-function Header(){
-    return <div>Hello Everyone I am header </div>
-    
-}
-function Header2(){
-    return <div>Hello Everyone I am header2 </div>
-    
-}
+import "./Header.css"
+import React from 'react'
 
-export  {Header,Header2};
+const Header = () => {
+  const headerStyle={
+    backgroundColor:"gray",
+    padding:".5 rem",
+    margin:".3rem",
+    border:"2px solid red"
+  };
+
+
+  return (
+   <nav style={headerStyle} >My name is Header</nav> )
+};
+
+export default Header;

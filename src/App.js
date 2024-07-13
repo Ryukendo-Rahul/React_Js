@@ -1,25 +1,14 @@
-
 import './App.css';
+import {Header,Header2} from "./Components/Header";
+import Footer from "./Components/footer"
 
-
-function MyComponent({name , giveClass, income=0} ){
-  return ( 
-<>
-  <div className={giveClass} >
-    {name}: $ {income}</div>
-  <hr/>
-  <button> MyName</button>
-  </>
- );
-}
 
 function App() {
   return (
    <div>
-    Hello <MyComponent name={"Abhi"} income={"234"} giveClass="comp1" />  
-    <MyComponent name={"Satya"} giveClass="comp2"/> 
-     <MyComponent name={"Simmi"} income={"5634"} giveClass="comp3"/> 
-
+    <Header />
+    <Header2/>
+    <Footer/>
    </div>
   );
 }

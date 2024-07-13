@@ -8,6 +8,7 @@ function MyComponent({name , giveClass, income=0} ){
   <div className={giveClass} >
     {name}: $ {income}</div>
   <hr/>
+  <button> MyName</button>
   </>
  );
 }

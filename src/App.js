@@ -1,17 +1,13 @@
 import './App.css';
-// import Header from '.Components/Header'
-import Footer from './Components/footer'
 import Header from './Components/Header'
-// import {Main} from './Components/Main'
+import Home from './Components/Home'
 
-const a="56";
+
 function App() {
   return (
    <div>
     <Header/>
-    <Footer/>
-    {/* <Main/> */}
-    {a}
+    <Home/>
    </div>
   );
 }
